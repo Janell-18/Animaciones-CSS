@@ -14,6 +14,36 @@
             background-color: #0b0d17;
             perspective: 1000px; 
         }
+         .linterna {
+            position: absolute;
+            bottom: -100px;
+            width: 60px;
+            height: 85px;
+            background: url('linterna2.png') no-repeat center center;
+            background-size: contain;
+            filter: var(--brillo-linterna);
+            animation: festival var(--tiempo-vuelo) linear infinite;
+            opacity: 0;
+        }
+
+        
+        @keyframes festival {
+            0% {
+                transform: translate3d(0, 0, 0);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            
+            80% {
+                opacity: 1;
+              
+            }
+            100% {
+                
+                transform: translate3d(var(--mover-x), -110vh, -400px);
+                opacity: 0;
+            }
+        }
         
         
     </style>
