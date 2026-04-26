@@ -45,6 +45,32 @@
             }
         }
         
+        :root {
+            --brillo-linterna: drop-shadow(0 0 15px rgba(255, 220, 100, 0.8));
+            --tiempo-vuelo: 28s; 
+        }
+
+        
+        .izq { left: 10%; --mover-x: 35vw; }
+        .izq-lejos { left: -5%; --mover-x: 40vw; width: 40px; height: 60px; }
+
+        
+        .der { right: 10%; --mover-x: -35vw; }
+        .der-lejos { right: -5%; --mover-x: -40vw; width: 45px; height: 65px; }
+
+        
+        .t1 { animation-delay: 0s; }
+        .t2 { animation-delay: 4s; }
+        .t3 { animation-delay: 8s; }
+        .t4 { animation-delay: 12s; }
+        .t5 { animation-delay: 16s; }
+
+    
+        .linterna:hover {
+            filter: brightness(1.5) drop-shadow(0 0 30px yellow);
+            transition: 0.3s;
+        }
+        
         
     </style>
 </head>
